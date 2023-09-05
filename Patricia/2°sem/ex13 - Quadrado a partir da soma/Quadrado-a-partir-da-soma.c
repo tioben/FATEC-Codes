@@ -5,20 +5,19 @@
 #include <stdio.h>
 
 int main() {
-    int n, i, impar = 1, soma;
+    int n, i, impar = 1, soma=0;
     
     printf("Digite um numero natural maior que 0: ");
     scanf("%i", &n);
 
-    for (i = 1; i < n; i++)
+    for (i = 1; i <= n; i++)
     {
-        impar += 2;
         soma += impar; 
-        printf("%i", soma);
+        impar += 2;
     }
 
     printf("-------------------------------------------\n");
-    printf("O quadrado de %d e igual a %d\n", n, (soma+1));
+    printf("O quadrado de %d e igual a %d\n", n, soma);
     printf("-------------------------------------------\n");
 
     return 0;
