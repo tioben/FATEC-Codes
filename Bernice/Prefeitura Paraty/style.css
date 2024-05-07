@@ -41,7 +41,7 @@ header .banner{
     justify-content: center;
     color: white;
     background: url("img/bg-estacao.jpg") no-repeat top;
-    background-size: contain;
+    background-size: cover;
     background-attachment: fixed;
     position: relative;
     padding-top: 90px;
@@ -92,7 +92,7 @@ header .banner h1, header .banner h2{
     width: 100%;
 }
 
-.about-city h1, .attractions h1{
+.about-city marquee, .attractions marquee{
     font-size: 66px;
     position: absolute;
     top: 45%;
