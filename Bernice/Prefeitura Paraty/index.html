@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,13 +7,13 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <header>
+    <header id="header">
         <nav>
-            <img src="img/logo.png" alt="logo-icon">
+            <a href="#header"><img src="img/logo.png" alt="logo-icon"></a>
             <ul type="none">
-                <li><a href="#">Sobre</a></li>
-                <li><a href="#">Pontos turísticos</a></li>
-                <li><a href="#">Galeria</a></li>
+                <li><a href="#about-city">Sobre</a></li>
+                <li><a href="#attractions">Pontos turísticos</a></li>
+                <li><a href="#photo-gallery">Galeria</a></li>
             </ul>
         </nav>
         <div class="banner">
@@ -22,9 +22,11 @@
         </div>
     </header>
     <main>
-        <section class="about-city">
-            <h1>Sobre a cidade</h1>
-            <img src="img/Praca-Matriz.jpg" alt="Casa-da-Cultura">
+        <section class="about-city" id="about-city">
+            <div class="box">
+                <h1>Sobre a cidade</h1>
+                <img src="img/Praca-Matriz.jpg" alt="Casa-da-Cultura">
+            </div>
             <p>
                 Paraty é um pedacinho do passado brasileiro, que nos remete ao período colonial, através de suas fortificações, ruas, casarões preservados e sua cultura. A história de Paraty é marcada por importantes acontecimentos ao longo dos séculos, como a participação nos ciclos da cana, do ouro e do café. A partir de agora, você é nosso convidado especial para relembrar toda esta trajetória, que levou Paraty a se tornar um Patrimônio Histórico Nacional.
             </p>
@@ -35,37 +37,61 @@
                 Somente em meados do século XX que Paraty retoma seu desenvolvimento através do Ciclo do Turismo, que se tornou a principal fonte de renda e base da economia local. Com a reabertura da estrada Paraty-Cunha em 1954, que a ligava ao Estado de São Paulo, e a abertura da BR-101 na década de 1970 que liga Rio de Janeiro a Santos, a cidade foi redescoberta e tornou-se um polo de atração turística. Em 1958 o conjunto histórico de Paraty foi tombado pelo IPHAN – Instituto do Patrimônio Histórico e Artístico Nacional. Hoje a cidade tem sua vocação principal no Turismo, recebe dezenas de eventos anualmente, e tornou-se um dos principais polos turísticos do Brasil. Paraty se destaca não só pela sua rica cultura, mas também pelas riquezas naturais e sua excelente gastronomia e vida noturna. Venha descobrir os encantos de Paraty!
             </p>
         </section>
-        <section class="attractions">
+        <section class="attractions" id="attractions">
             <div class="contain1">
-                <h1>Pontos turísticos</h1>
-                <img src="img/Casa-da-Cultura.jpg" alt="Casa-da-Cultura">
+                <div class="box">
+                    <h1>Pontos turísticos</h1>
+                    <img src="img/Casa-da-Cultura.jpg" alt="Casa-da-Cultura">
+                </div>
                 <div class="contain2">
-                    <p>Conheça alguns dos pontos mais atrativos de paraty para você visitar:</p>
+                    <p>Abaixo listamos alguns dos pontos mais atrativos de paraty para você visitar:</p>
                     <ul type="none">
-                        <li><a href="#">Câmara municipal</a></li>
-                        <li><a href="#">Caminho do Ouro</a></li>
-                        <li><a href="#">Capela da Generosa</a></li>
-                        <li><a href="#">Casa da Cultura</a></li>
-                        <li><a href="#">Chafariz da pedreira</a></li>
+                        <li>Câmara municipal</li>
+                        <li>Caminho do Ouro</li>
+                        <li>Capela da Generosa</li>
+                        <li>Casa da Cultura</li>
+                        <li>Chafariz da pedreira</li>
                     </ul>
                 </div>
             </div>
         </section>
-        <section class="photo-gallery">
+        <section class="photo-gallery" id="photo-gallery">
             <h1>Galeria de fotos</h1>
             <p>Confira algumas belísimas imagens da cidade na galeria abaixo:</p>
-            <div class="gallery-box">
-                <img src="img/Cachoeira.jpg" alt="">
-                <img src="img/Cais.jpg" alt="">
-                <img src="img/Caminho-do-Ouro.jpg" alt="">
-                <img src="img/Ilha-do-Cedro.jpg" alt="">
-                <img src="img/Lagoa-Azul.jpg" alt="">
-                <img src="img/Poco-Ingleses.jpg" alt="">
-            </div>
+            <ul class="gallery-box" type="none">
+                <li><img src="img/Cachoeira.jpg" alt="foto"></li>
+                <li><img src="img/Cais.jpg" alt="foto"></li>
+                <li><img src="img/Caminho-do-Ouro.jpg" alt="foto"></li>
+                <li><img src="img/Ilha-do-Cedro.jpg" alt="foto"></li>
+                <li><img src="img/Lagoa-Azul.jpg" alt="foto"></li>
+                <li><img src="img/Poco-Ingleses.jpg" alt="foto"></li>
+            </ul>
         </section>
     </main>
     <footer>
-        <p>copyright 2022 c - Prefeitura de Paraty tm</p>
+        <h1>Fale conosco</h1>
+        <form action="/pagina-processa-dados-do-form" method="post">
+            <div>
+                <input type="text" id="nome" name="usuario_nome" placeholder="Nome" />
+                <input type="email" id="email" name="usuario_email" placeholder="E-mail" />
+            </div>
+            <textarea id="msg" name="usuario_msg" placeholder="Mensagem" class="box-text"></textarea>          
+            <button type="submit">Enviar</button>
+          </form>
+          <div class="infos">
+            <div class="box">
+                <p>Rua da prefeitura 99, Sala 99/99</p>
+                <p>Vila da prefeitura, ESTADO - UF</p>
+                <p>CEP 99999-999</p>
+            </div>
+            <div class="box">
+                <p>Fone(SP): +99 99 99999-9999</p>
+                <p>Fone(PE): +99 99 99999-9999</p>
+            </div>
+            <div class="box">
+                <p>Email: contato@prefeitura-paraty.com.br</p>
+            </div>
+          </div>
     </footer>
 </body>
 </html>
