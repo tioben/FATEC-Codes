@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Projeto II - Formulário</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="Container">
+        <form action="">
+            <fieldset>
+                <label for="name">Nome</label>
+                <input type="text" id="name" name="name" placeholder="Nome" required >
+            </fieldset>
+            <fieldset>
+                <label for="email">E-mail</label>
+                <input type="email" id="email" name="email" placeholder="E-mail" required >
+            </fieldset>
+            <fieldset>
+                <label for="tel">Celular</label>
+                <input type="tel" id="tel" name="tel" placeholder="(xx) xxxxx-xxxx" required >
+            </fieldset>
+            <fieldset class="radio_container">
+                <fieldset class="radio_circle">
+                    <label for="masculino">Masculino</label>
+                    <input type="radio" id="masculino" name="sexo" value="Masculino" required >
+                </fieldset>
+                <fieldset class="radio_circle">
+                    <label for="feminino">Feminino</label>
+                    <input type="radio" id="feminino" name="sexo" value="Feminino" required >
+                </fieldset>
+            </fieldset>
+            <fieldset>
+                <label for="checkbox">Deseja receber novidades por E-mail?</label>
+                <input type="checkbox" class="checkbox" style="cursor: pointer">
+            </fieldset>
+            <button>ENVIAR</button>
+        </form>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
