@@ -1,0 +1,22 @@
+(Planejamento 17/06/2023)
+Reunião GD até 9h
+Reunião Equinix até 9:30h
+Testar PDU e STS até 12h
+Desenvolver tela UHD até 18h
+(Executado 17/06/2023)
+Reunião GD até 9h
+Reunião Equinix até  9:30h
+Teste na STS da tela msb d3 até 12h
+Desenvolvimento tela UHD_d3, UHD_D3/parametros, rpp_d3 e rpp_d3/parametros até 15:40h
+Testes na UHD até 18h
+
+(Planejamento 18/06/2023)
+Reunião GD até 8:30h
+Reunião Equinix até 9:00h 
+Testar Power Meter na UHD (liberar logo essa tela)
+Desenvolver e testar RPP (fazer os layers e liberar logo tb)
+Começar apresentação (iniciar estudos da apresentação)
+(Executado 18/06/2023)
+Reunião GD até 8:30h
+Reunião Equinix até 9h
+
