@@ -1,11 +1,12 @@
 const array = []
 class cadastro {
-    constructor(nome, idade, celular, sexo, notificacao){
+    constructor(nome, idade, celular, sexo, notificacao, email){
         this.nome = nome;
         this.idade = idade;
         this.celular = celular;
         this.sexo = sexo;
         this.notificacao = notificacao
+        this.email = email
     }
 
     guardarDado(){
@@ -13,13 +14,13 @@ class cadastro {
     }
 }
 
-function buttonClick(nome, idade, celular, sexo, notificacao){
+function buttonClick(){
     const inputNome = document.getElementById("name")
     const inputEmail = document.getElementById("email")
     const inputIdade = document.getElementById("idade")
     const inputCelular = document.getElementById("tel")
-    const inputSexo = document.getElementById("name")
-    const inputNotificacao = document.getElementById("name")
+    const inputSexo = document.querySelector('input[name="sexo"]:checked');
+    const inputNotificacao = document.getElementById("notificacao")
 
     const inputNomeValue = inputNome.value
     const inputEmailValue = inputEmail.value
@@ -28,11 +29,20 @@ function buttonClick(nome, idade, celular, sexo, notificacao){
     const inputSexoValue = inputSexo.value
     const inputNotificacaoValue = inputNotificacao.value
 
-    const pessoa = new cadastro(inputNomeValue, inputIdadeValue, inputCelularValue, inputSexoValue, inputNotificacaoValue)
+    const pessoa = new cadastro(inputNomeValue, inputIdadeValue, inputCelularValue, inputSexoValue, inputNotificacaoValue, inputEmailValue)
     pessoa.guardarDado()
+    console.log(array)
+    resetForm()
 }
 
-buttonClick('gustavo', 24, '1212890814','Masculino', true )
+function resetForm() {
+    document.getElementById("name").value = '';
+    document.getElementById("email").value = '';
+    document.getElementById("idade").value = '';
+    document.getElementById("tel").value = '';
+    document.querySelectorAll('input[name="sexo"]').forEach(input => input.checked = false);
+    document.getElementById("notificacao").checked = false;
+}
 
-console.log(array)
-
+const button = document.getElementById("send_button")
+button.addEventListener('click', buttonClick)
